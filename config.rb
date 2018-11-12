@@ -20,3 +20,7 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+data.interests.keys.each do |key|
+  proxy "/interests/#{key}.html", "/interests/show.html", locals: { interest: key }, ignore: true
+end

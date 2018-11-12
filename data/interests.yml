@@ -1,0 +1,36 @@
+football:
+  title: 'Football'
+  img: '/images/ajax.jpeg'
+  desc: "Ajax Amsterdam"
+  rating: "10"
+  img_large: '/images/ajax-large.jpg'
+travel:
+  title: 'Travel'
+  img: '/images/plane.jpeg'
+  desc: "Fly around the world"
+  rating: '9'
+  img_large: '/images/travel-large.jpg'
+code:
+  title: 'Code'
+  img: '/images/code.jpg'
+  desc: "Coding Ruby"
+  rating: "5"
+  img_large: '/images/code-large.jpg'
+amsterdam:
+  title: 'Amsterdam'
+  img: '/images/amsterdam.jpeg'
+  desc: 'Mokum'
+  rating: '8'
+  img_large: '/images/amsterdam-large.jpg'
+moscow:
+  title: 'Moscow'
+  img: '/images/moscow.jpg'
+  desc: 'Red Square'
+  rating: '6'
+  img_large: /images/moscow-large.jpg
+buenosaires:
+  title: 'Buenos Aires'
+  img: '/images/buenos-aires.jpeg'
+  desc: 'River decime que se siente'
+  rating: '7'
+  img_large: /images/buenosaires-large.jpeg

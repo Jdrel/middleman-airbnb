@@ -6,23 +6,22 @@ title: Le Wagon - Middleman
   <div class="banner-content">
     <h1>Jascha Drel</h1>
     <p>Nice picture in the background</p>
-    <a class="btn btn-primary btn-lg">Just click</a>
+    <a href="https://github.com/Jdrel" class="btn btn-primary btn-lg">Just click</a>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-   <% data.cards.each do |card| %>
+   <% data.interests.each do |card, item| %>
    <div class="col-xs-12 col-sm-4">
-    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= card.img %>');">
-      <div class="card-category"><%= card.subject %></div>
+    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= item.img %>');">
+      <div class="card-category"><%= item.title %></div>
       <div class="card-description">
-        <h2><%= card.subject %></h2>
-        <p><%= card.subject %></p>
+        <h2><%= item.desc %></h2>
+        <p> rating: <%= item.rating %></p>
       </div>
       <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/jdrel">
-      <a class="card-link" href="#" ></a>
-
+      <a class="card-link" href="/interests/<%= card %>.html" ></a>
     </div>
   </div>
   <% end%>
